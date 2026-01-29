@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+header{
+    transform: translate(660px,-500px);
+    color: blue;
+    font-size: 30px;
+}
+.scrolling{
+    width: 650px;
+    height: 480px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(251, 249, 249);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transform: translate(-170px);
+    position:sticky;
+    
+}
+.container header{
+    font-size: 1.5rem;
+    color: rgb(34, 33, 33);
+    font-weight: 500;
+    text-align: center;
+    color: rgb(72, 0, 255);
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .inputbox{
+    width: 80%;
+    margin-top: 20px;
+
+}
+.inputbox label{
+    color: rgb(7, 0, 3);
+    font-size: 15PX;
+}
+.form .inputbox input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(17, 16, 16);
+    margin-top: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.form .column{
+    display: flex;
+   column-gap: 15px;
+}
+.form .genderbox{
+    margin-top: 15px;
+}
+.genderbox h3{
+    color: rgb(7, 0, 3) ;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.form :where(.genderoption,.gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+.form button{
+height: 55px;
+width: 100%;
+color: blue;
+font-size: 1rem;
+border: none;
+margin-top: 30px;
+cursor: pointer;
+border-radius: 8px;
+color: aliceblue;
+font-weight: 400;
+background-color: rgb(90, 90, 241);
+}
+ .textwidth .inputbox{
+    max-width: 100px;
+ }
+.drp{
+    font-size: large;
+    color: rgb(17, 16, 16);
+    margin-top: 8px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .form .column{
+      flex-wrap: wrap;
+    }  
+    .form :where(.genderoption,.gender){
+        row-gap: 15px;
+    }
+}
+    
