@@ -55,7 +55,7 @@ A comprehensive web-based application for managing college operations, including
 - **Database Connection**: Default connection settings are in PHP files (e.g., `index.php`):
     - Host: `localhost`
     - User: `root`
-    - Password: `""` (Empty)
+    - Password: `""` (Given in the db or add in the db)
     - Database: `cms`
 
 ## 🤝 Contributing
